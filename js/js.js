@@ -10,11 +10,10 @@ var min=10;
 var seg=0;
 var alerta=false;
 
-//**************************************************************************************************** 
-//Después de cargar la página (onload) se definen los eventos sobre los elementos entre otras acciones.
+
 window.onload = function() {
 
-    //CORREGIR al apretar el botón
+    
     formElement = document.getElementById('myform');
     formElement.onsubmit = function() {
         inicializar();
@@ -36,7 +35,7 @@ window.onload = function() {
         return false;
     }
 
-    //LEER XML de xml/preguntas.xml
+   
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -51,14 +50,11 @@ window.onload = function() {
     
 }
 
-//****************************************************************************************************
-// Recuperamos los datos del fichero XML xml/preguntas.xml
-// xmlDOC es el documento leido XML. 
-function gestionarXml(dadesXml) {
-    var xmlDoc = dadesXml.responseXML; //Parse XML to xmlDoc  
 
-    //SELECT
-    //Recuperamos el título y las opciones, guardamos la respuesta correcta
+function gestionarXml(dadesXml) {
+    var xmlDoc = dadesXml.responseXML; 
+
+   
     for (numPregunta=0; numPregunta<2; numPregunta++) {
         var tituloSelect = xmlDoc.getElementsByTagName("title")[numPregunta].innerHTML;
         var opcionesSelect = [];
@@ -70,8 +66,7 @@ function gestionarXml(dadesXml) {
         respuestaSelect[numPregunta] = parseInt(xmlDoc.getElementsByTagName("question")[numPregunta].getElementsByTagName("answer")[0].innerHTML);
     }
     
-    //SELECT MULTIPLE
-    //Recuperamos el título y las opciones, guardamos las respuestas correctas
+   
     for (numPregunta=2; numPregunta<4; numPregunta++){
         var tituloMultiple = xmlDoc.getElementsByTagName("title")[numPregunta].innerHTML;
         var opcionesMultiple = [];
@@ -87,16 +82,14 @@ function gestionarXml(dadesXml) {
         }
     }
 
-    //TEXT
-    //Recuperamos el título y la respuesta correcta del input text
+    
     for (numPregunta=4; numPregunta<6; numPregunta++) {
         var tituloInput = xmlDoc.getElementsByTagName("title")[numPregunta].innerHTML;
         ponerDatosInputHtml(tituloInput,numPregunta);
         respuestaText[numPregunta] = xmlDoc.getElementsByTagName("question")[numPregunta].getElementsByTagName("answer")[0].innerHTML;
     }
 
-    //RADIO
-    //Recuperamos el título y las opciones, guardamos la respuesta correcta
+   
     for (numPregunta=6 ; numPregunta<8;numPregunta++) {
         var tituloRadio = xmlDoc.getElementsByTagName("title")[numPregunta].innerHTML;
         var opcionesRadio = [];
@@ -108,8 +101,7 @@ function gestionarXml(dadesXml) {
         respuestaRadio[numPregunta] = parseInt(xmlDoc.getElementsByTagName("question")[numPregunta].getElementsByTagName("answer")[0].innerHTML);
     }
 
-    //CHECKBOX
-    //Recuperamos el título y las opciones, guardamos las respuestas correctas
+  
     for (numPregunta=8; numPregunta<10; numPregunta++){
         var tituloCheckbox = xmlDoc.getElementsByTagName("title")[numPregunta].innerHTML;
         var opcionesCheckbox = [];
@@ -126,10 +118,7 @@ function gestionarXml(dadesXml) {
     }
 }
 
-//****************************************************************************************************
-// Implementación de la corrección
 
-//Corrección de los dos Select
 function corregirSelect(){
     for(n=0;n<2;n++){
         var sel = formElement.elements[n];  
@@ -149,7 +138,7 @@ function corregirSelect(){
     }       
 }
 
-//Corrección de los Select MULTIPLE
+
 function corregirMultiple(){
     for(n=2;n<4;n++){
         var sel = formElement.elements[n];
@@ -182,7 +171,7 @@ function corregirMultiple(){
     }
 }
 
-//Corrección de los text
+
 function corregirText() {
     for(n=4;n<6;n++){
         var txt = formElement.elements[n].value;  
@@ -202,7 +191,7 @@ function corregirText() {
     }
 }
 
-//Corrección de los radio
+
 function corregirRadio(){
     var f=formElement;
     for(n=6;n<8;n++){
@@ -228,9 +217,9 @@ function corregirRadio(){
     }        
 }
 
-//Corrección de los checkbox
+
 function corregirCheckbox(){
-  //Para cada opción mira si está checkeada, si está checkeada mira si es correcta y lo guarda en un array escorrecta[]
+ 
   var f=formElement;
   var escorrecta = [];
   for (n=8;n<10;n++){
@@ -248,12 +237,12 @@ function corregirCheckbox(){
             for (j = 0; j < respuestasCheckbox[n].length; j++) {
                 if (i==respuestasCheckbox[n][j]) escorrecta[i]=true;
             }
-            //si es correcta sumamos y ponemos mensaje, si no es correcta restamos y ponemos mensaje.
+            
             if (escorrecta[i]) {
-                nota +=1.0/respuestasCheckbox[n].length;  //dividido por el número de respuestas correctas   
+                nota +=1.0/respuestasCheckbox[n].length;  
                 darRespuestaHtml("- Pregunta "+(n+1)+": Opción "+(i+1)+" Correcta");    
             } else {
-                nota -=1.0/respuestasCheckbox[n].length;  //dividido por el número de respuestas correctas   
+                nota -=1.0/respuestasCheckbox[n].length;  
                 darRespuestaHtml("- Pregunta "+(n+1)+": Opción "+(i+1)+" Incorrecta");
                 mal=true;
             }   
@@ -268,8 +257,7 @@ function corregirCheckbox(){
   
 }
 
-//****************************************************************************************************
-// Poner los datos recibios en el HTML
+
 
 
 function ponerDatosSelectHtml(t, opt, numPregunta) {
@@ -346,8 +334,7 @@ function ponerDatosCheckboxHtml(t,opt, numPregunta){
  }  
 }
 
-//****************************************************************************************************
-//Gestionar la presentación de las respuestas
+
 function darRespuestaHtml(r) {
     var p = document.createElement("p");
     var node = document.createTextNode(r);
@@ -372,11 +359,11 @@ function inicializar() {
     nota = 0.0;
 }
 
-//Comprobar que se han introducido datos en el formulario
+
 function comprobar(){
    var f=formElement;
 
-   // Comprobación del select normal
+   
    for(numPreg=0;numPreg<2;numPreg++){
     if (f.elements[numPreg].selectedIndex==0) {
     f.elements[numPreg].focus();
@@ -384,7 +371,7 @@ function comprobar(){
     return false;
     }
    }
-   // Comprobación del select multiple
+
    for(numPreg=2;numPreg<4;numPreg++){
        var multRespondido=false;
         for(i=1;i<(f.elements[numPreg].length);i++){
@@ -399,7 +386,7 @@ function comprobar(){
         return false;
         }
    }
-   // Comprobación del text
+  
    for(numPreg=4;numPreg<6;numPreg++){
     if (f.elements[numPreg].value=="") {
     f.elements[numPreg].focus();
@@ -407,7 +394,7 @@ function comprobar(){
     return false;
     }
    }
-   // Comprobación del radio
+
    for(numPreg=6;numPreg<8;numPreg++){
        var nombreRadio;
         if (numPreg==6){
@@ -421,7 +408,7 @@ function comprobar(){
             return false;
         }   
     }
-   // Comprobación del checkbox
+  
    for(numPreg=8;numPreg<10;numPreg++){
         var checked=false;
         var nombre;
@@ -444,8 +431,7 @@ function comprobar(){
   return true;
 }
 
-//****************************************************************************************************
-//Funciones del tiempo
+
 
 function actualizarTime(){
     var segTimer;
