@@ -9,4 +9,4 @@ html {text-align: center;}
 input[type="radio"] {
   margin-right: 0;
 }
-radioDiv {text-align: left;}
+.radioDiv {text-align: left;}
