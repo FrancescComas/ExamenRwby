@@ -105,11 +105,12 @@
     <question id="q010">
         <type>checkbox</type>
         <title>
-            10. Qui es la germana de na Ruby
+            10. Quins dels dos son membres de RWBY?
         </title>
         <option>a) Yang</option>
         <option>b) Blake</option>
-        <option>c) Weiss</option>
+        <option>c) Pyrra</option>
         <answer>0</answer>
+        <answer>1</answer>
     </question>
 </questions>
