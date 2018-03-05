@@ -192,11 +192,11 @@ function corregirText() {
             nota +=1;
         } else {
             darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
-            if(n==4){
-                darExplicacion("Respuesta correcta: tela");
-                darExplicacion("'Tela' digo y no la entiendes; 'tela' vuelvo a repetir");
+            if(n==5){
+                darExplicacion("Respuesta correcta: 4");
+                
             } else {
-                darExplicacion("Respuesta correcta: silencio");
+                darExplicacion("Resposta correcta: Corb");
             }
         }
      
