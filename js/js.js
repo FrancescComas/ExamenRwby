@@ -143,7 +143,7 @@ function corregirSelect(){
                 darExplicacion("Respuesta correcta: c");
 
             } else {
-                darExplicacion("Respuesta correcta: c");
+                darExplicacion("Respuesta correcta: b");
 
             }
         }       
