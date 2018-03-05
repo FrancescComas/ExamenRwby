@@ -183,8 +183,8 @@ function corregirMultiple(){
     }
 }
 
-
-function corregirText() {
+-//Corrección de los text
+-function corregirText() {
 -    for(n=4;n<6;n++){
 -        var txt = formElement.elements[n].value;  
 -         if (txt.toLowerCase()==respuestaText[n]) {
@@ -192,14 +192,14 @@ function corregirText() {
 -            nota +=1;
 -        } else {
 -            darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
--            if(n==4){
--                darExplicacion("Respuesta correcta: 4");
+-            if(n==5){
+-                darExplicacion("Respuesta correcta: Corb");
 -                
 -            } else {
 -                darExplicacion("Resposta correcta: 4");
 -            }
 -        }
--      }
+-     
 -    }
 
 //Corrección de los radio
