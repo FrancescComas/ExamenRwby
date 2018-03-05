@@ -71,18 +71,18 @@
     </question>
     <question id="q008">
         <type>radio</type>
-        <title>8. ¿Qué es más rápido en la sabana?</title>
+        <title>8. Qui es creador de la serie?</title>
         <option>
-            a) Un guepardo
+            a) Hidetaka Miyazaki
         </option>
         <option>
-            b) Un jaguar
+            b) Akira Toriyama 
         </option>
         <option>
-            c) El correcaminos
+            c) Jhon Smith
         </option>
         <option>
-            d) Una jirafa en un ferrari
+            d) Monty Oum
         </option>
         <answer>3</answer>
     </question>
