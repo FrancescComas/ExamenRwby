@@ -7,19 +7,19 @@
             1. Quin es el personatge principal de RWBY?
         </title>
         <option>a) Yang</option>
-        <option>b) Ruby</option>
-        <option>c) Ozpin</option>
-        <answer>1</answer>
+        <option>b) Ozpin</option>
+        <option>c) Ruby</option>
+        <answer>2</answer>
     </question>
     <question id="q002">
         <type>select</type>
         <title>
             2. Qui es l'antagonista principal de la serie?
         </title>
-        <option>a) Salem</option>
+        <option>a) Jaune</option>
         <option>b) Blake</option>
-        <option>c) Jaune</option>
-        <answer>0</answer>
+        <option>c) Salem</option>
+        <answer>1</answer>
     </question>
     <question id="q003">
         <type>multiple</type>
