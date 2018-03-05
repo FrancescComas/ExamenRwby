@@ -1,116 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="preguntas.xsd">
-    <question id="q001">
-        <type>select</type>
-        <title>
+<?xml version="1.0" encoding="UTF-8"?><questions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="preguntas.xsd"><question id="q001"><type>select</type><title>
             1. Quin es el personatge principal de RWBY?
-        </title>
-        <option>a) Yang</option>
-        <option>b) Ozpin</option>
-        <option>c) Ruby</option>
-        <answer>2</answer>
-    </question>
-    <question id="q002">
-        <type>select</type>
-        <title>
+        </title><option>a) Yang</option><option>b) Ozpin</option><option>c) Ruby</option><answer>2</answer></question><question id="q002"><type>select</type><title>
             2. Qui es l'antagonista principal de la serie?
-        </title>
-        <option>a) Jaune</option>
-        <option>b) Salem</option>
-        <option>c) Blake</option>
-        <answer>1</answer>
-    </question>
-    <question id="q003">
-        <type>multiple</type>
-        <title>
+        </title><option>a) Jaune</option><option>b) Salem</option><option>c) Blake</option><answer>1</answer></question><question id="q003"><type>multiple</type><title>
             3. Quines d'aquestes opcions son armes de la serie?
-        </title>
-        <option>a) Crescent Rose</option>
-        <option>b) Myrtenaster</option>
-        <option>c) Mega Pistol</option>
-        <option>d) Crocea Mors</option>
-        <answer>0</answer>
-        <answer>1</answer>
-        <answer>3</answer>
-    </question>
-    <question id="q004">
-        <type>multiple</type>
-        <title>
+        </title><option>a) Crescent Rose</option><option>b) Myrtenaster</option><option>c) Mega Pistol</option><option>d) Crocea Mors</option><answer>0</answer><answer>1</answer><answer>3</answer></question><question id="q004"><type>multiple</type><title>
             4. Una de les seguents opcions no es del grup JNPR, quina es?
-        </title>
-        <option>a) Blake</option>
-        <option>b) Pyrra</option>
-        <option>c) Nora</option>
-        <option>d) Weiss</option>
-        <option>e) Ren</option>
-        <answer>0</answer>
-        <answer>3</answer>
-    </question>
-    <question id="q005">
-        <type>text</type>
-        <title>
+        </title><option>a) Blake</option><option>b) Pyrra</option><option>c) Nora</option><option>d) Weiss</option><option>e) Ren</option><answer>0</answer><answer>3</answer></question><question id="q005"><type>text</type><title>
             5. Quantes donzelles hi ha en el mon?
-        </title>
-        <answer>4</answer>
-    </question>
-    <question id="q006">
-        <type>text</type>
-        <title>
+        </title><answer>4</answer></question><question id="q006"><type>text</type><title>
             6. Quants de regnes hi ha al mon?
-        </title>
-        <answer>4</answer>
-    </question>
-    <question id="q007">
-        <type>radio</type>
-        <title>7. Quin personatge es assesitan per na Cinder</title>
-        <option>a) Jaune</option>
-        <option>b) Ozpin</option>
-        <option>c) Pyrra</option>
-        <answer>2</answer>
-    </question>
-    <question id="q008">
-        <type>radio</type>
-        <title>8. Qui es creador de la serie?</title>
-        <option>
+        </title><answer>4</answer></question><question id="q007"><type>radio</type><title>7. Quin personatge es assesitan per na Cinder</title><option>a) Jaune</option><option>b) Ozpin</option><option>c) Pyrra</option><answer>2</answer></question><question id="q008"><type>radio</type><title>8. Qui es creador de la serie?</title><option>
             a) Hidetaka Miyazaki
-        </option>
-        <option>
+        </option><option>
             b) Akira Toriyama 
-        </option>
-        <option>
+        </option><option>
             c) Jhon Smith
-        </option>
-        <option>
+        </option><option>
             d) Monty Oum
-        </option>
-        <answer>3</answer>
-    </question>
-    <question id="q009">
-        <type>checkbox</type>
-        <title>
+        </option><answer>3</answer></question><question id="q009"><type>checkbox</type><title>
             9. Quins d'aquests son caçadors de la serie?
-        </title>
-        <option>a) Farrawell</option>
-        <option>b) Ironhood</option>
-        <option>c) Lionhearth</option>
-        <option>d) Glynda</option>
-        <option>e) F.Kenedy</option>
-        <option>f) Morrison</option>
-        <option>g) Crusoe</option>
-        <answer>1</answer>
-        <answer>2</answer>
-        <answer>3</answer>
-    </question>
-    <question id="q010">
-        <type>checkbox</type>
-        <title>
+        </title><option>a) Farrawell</option><option>b) Ironhood</option><option>c) Lionhearth</option><option>d) Glynda</option><option>e) F.Kenedy</option><option>f) Morrison</option><option>g) Crusoe</option><answer>1</answer><answer>2</answer><answer>3</answer></question><question id="q010"><type>checkbox</type><title>
             10. Quins dels dos son membres de RWBY?
-        </title>
-        <option>a) Yang</option>
-        <option>b) Blake</option>
-        <option>c) Pyrra</option>
-        <answer>0</answer>
-        <answer>1</answer>
-    </question>
-</questions>
+        </title><option>a) Yang</option><option>b) Blake</option><option>c) Pyrra</option><answer>0</answer><answer>1</answer></question></questions>
