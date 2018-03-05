@@ -184,32 +184,23 @@ function corregirMultiple(){
 }
 
 
-function corregirNumber(){
-  var s=formElement.elements[0].value;
-  if (s==numeroSecreto) {
-   darRespuestaHtml("Pregunta 1: Correcte!");
-      darRespuestaHtml("El Bitcoin va arribar a 20.000$ el 16 de desembre de 2017");
-   nota +=1;
-  }
-  else {
-    if (s>numeroSecreto) darRespuestaHtml("Pregunta 1: T'has passat");
-    else darRespuestaHtml("Pregunta 1: T'has quedat curt");
-  }
-}
-
-function corregirNombre(){
-  
-  var s1= formElement.elements[5].value; 
-  if (s1==respuestaText[5]) {
-   darRespuestaHtml("Pregunta 6: Correcte!")
-   nota +=1;
-  }
-  else {
-    darRespuestaHtml("Pregunta 6: Incorrecte");
-   nota +=1;
-  }
-}
-
+function corregirText() {
+-    for(n=4;n<6;n++){
+-        var txt = formElement.elements[n].value;  
+-         if (txt.toLowerCase()==respuestaText[n]) {
+-            darRespuestaHtml("- Pregunta "+(n+1)+": Correcta");
+-            nota +=1;
+-        } else {
+-            darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
+-            if(n==5){
+-                darExplicacion("Respuesta correcta: 4");
+-                
+-            } else {
+-                darExplicacion("Resposta correcta: 4");
+-            }
+-        }
+-     
+-    }
 
 //Corrección de los radio
 function corregirRadio(){
