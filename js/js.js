@@ -141,10 +141,10 @@ function corregirSelect(){
             darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
             if(n==0){
                 darExplicacion("Respuesta correcta: c");
-                darExplicacion("Si un avión explota no podrás salir de él, como mucho saldrás por las noticias.");
+
             } else {
                 darExplicacion("Respuesta correcta: c");
-                darExplicacion("En un incendio, las llamas siempre tienen la culpa.");
+
             }
         }       
     }       
