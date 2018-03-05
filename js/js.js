@@ -193,10 +193,10 @@ function corregirText() {
         } else {
             darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
             if(n==5){
-                darExplicacion("Respuesta correcta: 4");
+                darExplicacion("Respuesta correcta: Corb");
                 
             } else {
-                darExplicacion("Resposta correcta: Corb");
+                darExplicacion("Resposta correcta: 4");
             }
         }
      
