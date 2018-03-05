@@ -89,20 +89,18 @@
     <question id="q009">
         <type>checkbox</type>
         <title>
-            9. Laura, la madre de Lola, tiene 5 hijas. Cuatro de ellas se llaman Lala, Lele, Lili, Lolo. ¿Cuáles son los nombres de las 5 hermanas?
+            9. Quins d'aquests son caçadors de la serie?
         </title>
-        <option>a) Laura</option>
-        <option>b) Lola</option>
-        <option>c) Lala</option>
-        <option>d) Lele</option>
-        <option>e) Lili</option>
-        <option>f) Lolo</option>
-        <option>g) Lulu</option>
+        <option>a) Farrawell</option>
+        <option>b) Ironhood</option>
+        <option>c) Lionhearth</option>
+        <option>d) Glynda</option>
+        <option>e) F.Kenedy</option>
+        <option>f) Morrison</option>
+        <option>g) Crusoe</option>
         <answer>1</answer>
         <answer>2</answer>
         <answer>3</answer>
-        <answer>4</answer>
-        <answer>5</answer>
     </question>
     <question id="q010">
         <type>checkbox</type>
