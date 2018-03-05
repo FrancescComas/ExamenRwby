@@ -57,16 +57,16 @@
     <question id="q006">
         <type>text</type>
         <title>
-            6. Si lo nombras, desaparece. Hablamos del...
+            6. Amb quin animal volador es pot transformar en Qrow?
         </title>
-        <answer>silencio</answer>
+        <answer>Corb</answer>
     </question>
     <question id="q007">
         <type>radio</type>
-        <title>7. ¿Qué es lo primero que hace una vaca cuando sale el Sol?</title>
-        <option>a) Ir a pastar</option>
-        <option>b) Dormir</option>
-        <option>c) Sombra</option>
+        <title>7. Quin personatge es assesitan per na Cinder</title>
+        <option>a) Jaune</option>
+        <option>b) Ozpin</option>
+        <option>c) Pyrra</option>
         <answer>2</answer>
     </question>
     <question id="q008">
