@@ -200,7 +200,7 @@ function corregirNumber(){
 function corregirNombre(){
   
   var s1= formElement.elements[5].value; 
-  if (s1==respuestaText{5}) {
+  if (s1==respuestaText[5]) {
    darRespuestaHtml("Pregunta 6: Correcte!")
    nota +=1;
   }
