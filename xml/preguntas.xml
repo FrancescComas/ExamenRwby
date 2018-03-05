@@ -39,10 +39,10 @@
         <title>
             4. Una de les seguents opcions no es del grup JNPR, quina es?
         </title>
-        <option>a) Jaune</option>
+        <option>a) Blake</option>
         <option>b) Pyrra</option>
-        <option>c) Weiss</option>
-        <option>d) Nora</option>
+        <option>c) Nora</option>
+        <option>d) Weiss</option>
         <option>e) Ren</option>
         <answer>0</answer>
         <answer>3</answer>
