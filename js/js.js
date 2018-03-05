@@ -199,7 +199,7 @@ function corregirText() {
 -                darExplicacion("Resposta correcta: 4");
 -            }
 -        }
--     
+-      }
 -    }
 
 //Corrección de los radio
