@@ -192,7 +192,7 @@ function corregirText() {
 -            nota +=1;
 -        } else {
 -            darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
--            if(n==5){
+-            if(n==4){
 -                darExplicacion("Respuesta correcta: 4");
 -                
 -            } else {
