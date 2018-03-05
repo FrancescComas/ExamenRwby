@@ -9,7 +9,7 @@
         <option>a) Yang</option>
         <option>b) Ruby</option>
         <option>c) Ozpin</option>
-        <answer>2</answer>
+        <answer>1</answer>
     </question>
     <question id="q002">
         <type>select</type>
@@ -19,7 +19,7 @@
         <option>a) Salem</option>
         <option>b) Blake</option>
         <option>c) Jaune</option>
-        <answer>1</answer>
+        <answer>0</answer>
     </question>
     <question id="q003">
         <type>multiple</type>
