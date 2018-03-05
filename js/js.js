@@ -183,25 +183,36 @@ function corregirMultiple(){
     }
 }
 
-//Corrección de los text
-function corregirText() {
-    for(n=4;n<6;n++){
-        var txt = formElement.elements[n].value;  
-         if (txt.toLowerCase()==respuestaText[n]) {
-            darRespuestaHtml("- Pregunta "+(n+1)+": Correcta");
-            nota +=1;
-        } else {
-            darRespuestaHtml("- Pregunta "+(n+1)+": Incorrecta");
-            if(n==5){
-                darExplicacion("Respuesta correcta: Corb");
-                
-            } else {
-                darExplicacion("Resposta correcta: 4");
-            }
-        }
-     
-    }
+
+function corregirNumber(){
+  var s=formElement.elements[0].value;
+  if (s==numeroSecreto) {
+   darRespuestaHtml("Pregunta 1: Correcte!");
+      darRespuestaHtml("El Bitcoin va arribar a 20.000$ el 16 de desembre de 2017");
+   nota +=1;
+  }
+  else {
+    if (s>numeroSecreto) darRespuestaHtml("Pregunta 1: T'has passat");
+    else darRespuestaHtml("Pregunta 1: T'has quedat curt");
+  }
 }
+
+function corregirNombre(){
+  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
+  //en este ejemplo hace una comparación de números enteros
+  var s1= formElement.elements[10].value; 
+  if (s1==nombreSecreto) {
+   darRespuestaHtml("Pregunta 5: Correcte!")
+      darRespuestaHtml("Amb aquest nick es presentava el creador del bitcoin, el qual mai s'ha resolt qui era realment i va desapareixer 2011");
+   nota +=1;
+  }
+  else {
+    darRespuestaHtml("Pregunta 5: Incorrecte");
+     darRespuestaHtml("El seu nick era Satoshi Nakamoto, la seva identitat mai ha estat coneguda");
+   nota +=1;
+  }
+}
+
 
 //Corrección de los radio
 function corregirRadio(){
