@@ -57,9 +57,9 @@
     <question id="q006">
         <type>text</type>
         <title>
-            6. Amb quin animal volador es pot transformar en Qrow?
+            6. Quants de regnes hi ha al mon?
         </title>
-        <answer>Corb</answer>
+        <answer>4</answer>
     </question>
     <question id="q007">
         <type>radio</type>
@@ -105,12 +105,11 @@
     <question id="q010">
         <type>checkbox</type>
         <title>
-            10. Valore este examen (sabiendo que una mala valoración podría bajar su nota...)
+            10. Qui es la germana de na Ruby
         </title>
-        <option>a) Es genial</option>
-        <option>b) Increíble</option>
-        <option>c) Malísimo (PISTA: Esta no la marques...)</option>
+        <option>a) Yang</option>
+        <option>b) Blake</option>
+        <option>c) Weiss</option>
         <answer>0</answer>
-        <answer>1</answer>
     </question>
 </questions>
