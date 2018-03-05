@@ -198,17 +198,14 @@ function corregirNumber(){
 }
 
 function corregirNombre(){
-  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
-  //en este ejemplo hace una comparación de números enteros
-  var s1= formElement.elements[10].value; 
-  if (s1==nombreSecreto) {
-   darRespuestaHtml("Pregunta 5: Correcte!")
-      darRespuestaHtml("Amb aquest nick es presentava el creador del bitcoin, el qual mai s'ha resolt qui era realment i va desapareixer 2011");
+  
+  var s1= formElement.elements[5].value; 
+  if (s1==respuestaText{5}) {
+   darRespuestaHtml("Pregunta 6: Correcte!")
    nota +=1;
   }
   else {
-    darRespuestaHtml("Pregunta 5: Incorrecte");
-     darRespuestaHtml("El seu nick era Satoshi Nakamoto, la seva identitat mai ha estat coneguda");
+    darRespuestaHtml("Pregunta 6: Incorrecte");
    nota +=1;
   }
 }
